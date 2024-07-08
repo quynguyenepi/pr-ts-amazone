@@ -2,11 +2,11 @@ import axios from 'axios'
 import { useEffect, useReducer } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import LoadingBox from '../components/LoadingBox'
+import MessageBox from '../components/MessageBox'
 import { ApiError } from '../types/ApiError'
 import { Product } from '../types/Product'
 import { getError } from '../utils'
-import LoadingBox from '../components/LoadingBox'
-import MessageBox from '../components/MessageBox'
 
 type State = {
   products: Product[]
